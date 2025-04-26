@@ -6,6 +6,24 @@ This project benchmarks different methods of determining if a given string token
 
 It uses the **Java Microbenchmark Harness (JMH)** to provide reliable and precise benchmarking results.
 
+## Why?
+
+Recently, I got a code review that went beyond saying that exceptions aren't good for control flow but they're actually slow.
+
+Doing something like this is incredibly slow when there's an exception.
+
+```java
+String token = //...
+try {
+   int n = Integer.parseInt(token);
+   // do int stuff with n...
+} catch (NumberFormatException e) {
+   // do string stuff with token...  
+}
+```
+
+So I had to measure it!
+
 ## Approaches measured
 
 1. **Using `Integer.parseInt()`**
