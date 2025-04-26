@@ -48,26 +48,26 @@ The output will indicate the performance of each method and help choose the most
 
 ```
 Benchmark                             (token)  Mode  Cnt    Score    Error  Units
-RPNTokenBenchmark.usingCharCheck           42  avgt   25    2.741 ±  0.005  ns/op
-RPNTokenBenchmark.usingCharCheck            +  avgt   25    1.246 ±  0.019  ns/op
-RPNTokenBenchmark.usingCharCheck          -13  avgt   25    3.159 ±  0.023  ns/op
-RPNTokenBenchmark.usingCharCheck        hello  avgt   25    1.444 ±  0.005  ns/op
-RPNTokenBenchmark.usingCharCheck            -  avgt   25    1.189 ±  0.017  ns/op
-RPNTokenBenchmark.usingParseInt            42  avgt   25    3.737 ±  0.016  ns/op
-RPNTokenBenchmark.usingParseInt             +  avgt   25  993.799 ±  6.810  ns/op
-RPNTokenBenchmark.usingParseInt           -13  avgt   25    4.158 ±  0.008  ns/op
-RPNTokenBenchmark.usingParseInt         hello  avgt   25  992.356 ±  5.334  ns/op
-RPNTokenBenchmark.usingParseInt             -  avgt   25  992.391 ±  4.740  ns/op
-RPNTokenBenchmark.usingRegex               42  avgt   25   85.985 ±  0.721  ns/op
-RPNTokenBenchmark.usingRegex                +  avgt   25   85.185 ±  0.918  ns/op
-RPNTokenBenchmark.usingRegex              -13  avgt   25   91.964 ±  3.020  ns/op
-RPNTokenBenchmark.usingRegex            hello  avgt   25   68.243 ±  4.317  ns/op
-RPNTokenBenchmark.usingRegex                -  avgt   25   66.229 ±  1.719  ns/op
-RPNTokenBenchmark.usingRegexCompiled       42  avgt   25   35.011 ±  0.328  ns/op
-RPNTokenBenchmark.usingRegexCompiled        +  avgt   25   44.729 ± 12.679  ns/op
-RPNTokenBenchmark.usingRegexCompiled      -13  avgt   25   39.952 ±  0.442  ns/op
-RPNTokenBenchmark.usingRegexCompiled    hello  avgt   25   59.894 ± 10.058  ns/op
-RPNTokenBenchmark.usingRegexCompiled        -  avgt   25   46.192 ± 14.258  ns/op
+TokenBenchmark.usingCharCheck           42  avgt   25    2.741 ±  0.005  ns/op
+TokenBenchmark.usingCharCheck            +  avgt   25    1.246 ±  0.019  ns/op
+TokenBenchmark.usingCharCheck          -13  avgt   25    3.159 ±  0.023  ns/op
+TokenBenchmark.usingCharCheck        hello  avgt   25    1.444 ±  0.005  ns/op
+TokenBenchmark.usingCharCheck            -  avgt   25    1.189 ±  0.017  ns/op
+TokenBenchmark.usingParseInt            42  avgt   25    3.737 ±  0.016  ns/op
+TokenBenchmark.usingParseInt             +  avgt   25  993.799 ±  6.810  ns/op
+TokenBenchmark.usingParseInt           -13  avgt   25    4.158 ±  0.008  ns/op
+TokenBenchmark.usingParseInt         hello  avgt   25  992.356 ±  5.334  ns/op
+TokenBenchmark.usingParseInt             -  avgt   25  992.391 ±  4.740  ns/op
+TokenBenchmark.usingRegex               42  avgt   25   85.985 ±  0.721  ns/op
+TokenBenchmark.usingRegex                +  avgt   25   85.185 ±  0.918  ns/op
+TokenBenchmark.usingRegex              -13  avgt   25   91.964 ±  3.020  ns/op
+TokenBenchmark.usingRegex            hello  avgt   25   68.243 ±  4.317  ns/op
+TokenBenchmark.usingRegex                -  avgt   25   66.229 ±  1.719  ns/op
+TokenBenchmark.usingRegexCompiled       42  avgt   25   35.011 ±  0.328  ns/op
+TokenBenchmark.usingRegexCompiled        +  avgt   25   44.729 ± 12.679  ns/op
+TokenBenchmark.usingRegexCompiled      -13  avgt   25   39.952 ±  0.442  ns/op
+TokenBenchmark.usingRegexCompiled    hello  avgt   25   59.894 ± 10.058  ns/op
+TokenBenchmark.usingRegexCompiled        -  avgt   25   46.192 ± 14.258  ns/op
 ```
 
 Method | Pros | Cons | When to Use
