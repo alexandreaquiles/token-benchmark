@@ -6,11 +6,13 @@ This project benchmarks different methods of determining if a given string token
 
 It uses the **Java Microbenchmark Harness (JMH)** to provide reliable and precise benchmarking results.
 
-## Why?
+Article here: https://www.linkedin.com/pulse/exceptions-control-flow-slow-alexandre-aquiles-3wxef/
 
-Recently, I got a code review that went beyond saying that exceptions aren't good for control flow but they're actually slow.
+## Why doing this?
 
-Doing something like this is incredibly slow when there's an exception.
+Using Exceptions for control flow is a long know anti-pattern. But, recently, I got a code review that commented they're actually quite slow.
+
+Doing something like the following is incredibly slow when there's an exception:
 
 ```java
 String token = //...
@@ -78,9 +80,9 @@ usingRegex | Flexible | Very slow (regex compiled every time) | Rarely — mostl
 usingRegexCompiled | Clean, reusable patterns | Still relatively slow | Good balance if perf isn't critical
 
 ## Technologies Used
-- **Java**: Core language used for the implementation and benchmarks.
-- **JMH**: Java Microbenchmark Harness for precise benchmarking.
-- **JMH Plugin**: Gradle plugin for JMH integration in the project.
+- **Java**
+- **JMH (Java Microbenchmark Harness)** for precise benchmarking.
+- **JMH Gradle Plugin**
 
 ## How to Run the Benchmarks
 
@@ -91,11 +93,6 @@ To run the benchmarks:
 ```
 
 This will execute the benchmarks and provide a detailed report of performance metrics in the console.
-
-## Project Structure
-Here is the key file structure of the project:
-- `build.gradle`: Gradle configuration file for setting up dependencies and plugins.
-- `TokenBenchmark.java`: Contains the benchmarking code.
 
 ## License
 
